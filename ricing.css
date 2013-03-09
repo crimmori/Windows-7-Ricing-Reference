@@ -16,10 +16,10 @@ html
 	list-style-type: none;
 }
 
-.navigation li a:visited, a:hover, a:active, a:link
+.navigation ul li a:visited, a:hover, a:active, a:link
 {
 	text-decoration: none;
-	color: rgb(100,100,100);
+	color: #FFF;
 }
 
 #wrapper
