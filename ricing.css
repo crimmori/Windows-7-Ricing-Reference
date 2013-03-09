@@ -3,13 +3,20 @@ html
 	color:rgb(100,100,100);
 	background: 	#181818;
 }
+.navigation
+{
+	position: fixed;
+	width:310;
+	left: -290;
+	background: rgb(100,100,100);
+}
 
-#navigation ul
+.navigation ul
 {
 	list-style-type: none;
 }
 
-#navigation li a:visited, a:hover, a:active, a:link
+.navigation li a:visited, a:hover, a:active, a:link
 {
 	text-decoration: none;
 	color: rgb(100,100,100);
@@ -19,5 +26,37 @@ html
 {
 	margin-left: auto;
 	margin-right: auto;
-	width:60%
+	width:75%
+}
+
+
+.navigation ul
+{
+	width: 290;
+	padding:0px;
+	margin:0px;
+	color:#FFF;
+	list-style:none;
+	text-indent:15px;
+}
+
+.navigation ul li
+{
+	background:#3f3f3f;
+	line-height:10px;
+    border-bottom:1px solid #333;
+}
+
+.navigation ul li a
+{
+	text-decoration:none;
+	color:#FFF;
+	display:block;
+}
+
+.navigation ul li a:hover
+{
+	text-decoration:none;
+	background:  rgb(100,100,100);
+	display:block;
 }
