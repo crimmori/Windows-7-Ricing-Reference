@@ -60,3 +60,13 @@ html
 	background:  rgb(100,100,100);
 	display:block;
 }
+
+#wrapper ol
+{
+	list-style-type: none;
+}
+
+.h
+{
+	font-size: 40;
+}
