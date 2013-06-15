@@ -137,7 +137,7 @@
 	         <li ><div >(registration required to view links/images)</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-TrueTransparency-</div></li>
-	         <li ><div >An application that allows you to use PNG images to create skins used to change the transparency, and boarder effects of windows. Does not work on everything however, and can be a bit unstable in Win7</div></li>
+	         <li ><div >An application that allows you to use PNG images to create skins used to change the transparency, and border effects of windows. Does not work on everything however, and can be a bit unstable in Win7</div></li>
 	         <li ><div >http://www.softpedia.com/get/System/OS-Enhancements/TrueTransparency.shtml</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-Navigation Button Changer-</div></li>
@@ -424,7 +424,7 @@
 	         <li ><div >A: Install bblean as a shell.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Q: How do I remove taskbar/tray/status icons?</div></li>
-	         <li ><div >A: The easiest way is to shift+right click the icons on your bar.</div></li>
+	         <li ><div >A: The easiest way is to shift+right click the icons on your bar. Otherwise, ctrl+right click your bblean bar. Edit settings, and find this line "bbleanbar.item: Tray". Put a &quot;!&quot; in front of it so they won't load.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Q: How to I hide these workspace names (alpha) and the taskbar arrows?</div></li>
 	         <li ><div >A: Edit your bbleanbar.rc and put a &quot;!&quot; infront of these lines: </div></li>
@@ -464,9 +464,24 @@
 	         <li ><div >Just edit the key you want to use for volume controls, save the .rc and restart blackbox. If you wanted to use the buttons or sliders on a media keyboard, use bbkeyhook to define them.</div></li>
 	         <li ><div >Thats it! Run the script and enjoy your volume keys again.</div></li>
 	         <li ><div >&nbsp;</div></li>
-	         <li ><div >Q: How do I extend the width of my toolbar?</div></li>
+	         <li ><div >Q: How do I extend the width of my bbleanbar?</div></li>
 	         <li ><div >A: Ctrl+Right click&gt;config&gt;Width percent. </div></li>
-	         <li ><div >Alternatively, edit the bbleanbar.rc by selecting &quot;Edit settings&quot;</div></li>
+	         <li ><div >Alternatively, edit the bbleanbar.rc by selecting &quot;Edit settings&quot; and edit the bbLeanBar.widthPercent value.</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >Q: I want my bbleanbar to stretch across both monitors. How do I do this?</div></li>
+	         <li ><div >There are two ways to do this. The easiest (and recommended to those with equal resolution monitors) is to edit your bbleanbar.rc settings and override the max width percent by changing the value of "bbLeanBar.widthPercent" from 100 to 200. If you have uneven monitors (i.e. 1440x900 and 1366x768) you would use a value closer to 170 or so. Alternatively you can load in a separate bbleanbar and drag it to your other monitor. You can simply clone your current settings. To do this, follow these steps:</div></li>
+	         <li ><div >Go to your bblean installation directory. Open the plugins folder, and find the bbLeanBar folder.</div></li>
+	         <li ><div >Copy + paste it in the plugins directory, and rename the folder to &quot;bbleanbar2&quot;. </div></li>
+	         <li ><div >Visit Settings&gt;Configuration&gt;Plugins, and edit plugins.rc</div></li>
+	         <li ><div >Add the name of your new bar under the current bblean bar entry. It should look like this:</div></li>
+	         <li ><div ># - Integrated toolbar with tasks and tray</div></li>
+	         <li ><div >plugins\bbLeanBar\bbLeanBar.dll</div></li>
+	         <li ><div >plugins\bbLeanBar2\bbLeanBar.dll</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >Save As plugins.rc</div></li>
+	         <li ><div >Restart blackbox.</div></li>
+	         <li ><div >The bar should appear automatically, if not you should now have the option to load it within the plugins menu. </div></li>
+	         <li ><div >Repeat the steps provided for however many you need. </div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Q: How do I change my color scheme?</div></li>
 	         <li ><div >A: Right click menu&gt;bbstylemaker</div></li>
@@ -505,23 +520,7 @@
 	         <li ><div >A: Change your clock format to &quot;%I:%M&quot;</div></li>
 	         <li ><div >For additional time and date formats, visit:</div></li>
 	         <li ><div >http://bb4win.sourceforge.net/bblean/docs/bblean_details.htm#Clock_Formatting</div></li>
-	         <li ><div >If you want to completely remove the clock, leave the clock format window blank.</div></li>
-	         <li ><div >&nbsp;</div></li>
-	         <li ><div >Q: I want my bbleanbar to stretch across both monitors. How do I do this?</div></li>
-	         <li ><div >There are two ways to do this. The easiest (and recommended to those with equal resolution monitors) is to edit your bbleanbar.rc settings and override the max width percent by changing the value of "bbLeanBar.widthPercent" from 100 to 200. If you have uneven monitors (i.e. 1440x900 and 1366x768) you would use a value closer to 170 or so. Alternatively you can load in a separate bbleanbar and drag it to your other monitor. You can simply clone your current settings. To do this, follow these steps:</div></li>
-	         <li ><div >Go to your bblean installation directory. Open the plugins folder, and find the bbLeanBar folder.</div></li>
-	         <li ><div >Copy + paste it in the plugins directory, and rename the folder to &quot;bbleanbar2&quot;. </div></li>
-	         <li ><div >Visit Settings&gt;Configuration&gt;Plugins, and edit plugins.rc</div></li>
-	         <li ><div >Add the name of your new bar under the current bblean bar entry. It should look like this:</div></li>
-	         <li ><div ># - Integrated toolbar with tasks and tray</div></li>
-	         <li ><div >plugins\bbLeanBar\bbLeanBar.dll</div></li>
-	         <li ><div >plugins\bbLeanBar2\bbLeanBar.dll</div></li>
-	         <li ><div >&nbsp;</div></li>
-	         <li ><div >Save As plugins.rc</div></li>
-	         <li ><div >Restart blackbox.</div></li>
-	         <li ><div >The bar should appear automatically, if not you should now have the option to load it within the plugins menu. </div></li>
-	         <li ><div >Repeat the steps provided for however many you need. </div></li>
-	         <li ><div >Following this method will allow windows to detect each bar, allowing no overlap from programs.</div></li>
+	         <li ><div >If you want to completely remove the clock, leave the clock format window blank or put a &quot;!&quot; in front of bbleanbar.item: Clock in your bbleanbar.rc settings.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Q: Google Chrome is lagging/crashing on certain webpages ever since I started using Bblean. Whats going on?</div></li>
 	         <li ><div >A: This is a pretty widespread issue with Flash. I don't know why its so often reported/linked with Bblean, but the root of the problem is flash+Chrome. To fix this, navigate to:</div></li>
@@ -529,8 +528,9 @@
 	         <li ><div >Make sure you disable the correct version.</div></li>
 	         <li ><div >For bug tracking and other reports on this bug, see:</div></li>
 	         <li ><div >http://code.google.com/p/chromium/issues/detail?id=161307</div></li>
+	         <li ><div >Another reported fix: Navigate to chrome://flags/ via your address bar and disabe "GPU compositing on all pages" as well as "Threaded compositing".</div></li> 
 	         <li ><div >&nbsp;</div></li>
-	         <li ><div >You can also try navigating to: chrome://flags/ and disabling &quot;GPU compositing on all pages&quot; and &quot;Threaded compositing&quot;. This has been reported as a successful fix. </div></li>
+	         <li ><div >You can also try navigating to: chrome://flags/ and disabling &quot;GPU compositing on all pages&quot; and &quot;Threaded compositing&quot;. This has been reported as a successful fix.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Some additional info: http://pastebin.com/VaP78mPj</div></li>
 	         <li ><div >&nbsp;</div></li>
@@ -666,9 +666,6 @@
 	         <li ><div >(Note: Went ahead and added some pages of interest.)</div></li>
 	         <li ><div >A visual guide on basic set up:</div></li>
 	         <li ><div >http://www.gbgl-hq.com/demoness/Start.Page.Visual.Reference.png</div></li>
-	         <li ><div >&nbsp;</div></li>
-	         <li ><div >Alternative CSS's:</div></li>
-	         <li ><div >Desaturated: http://pastebin.com/50G7CXxJ</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-A neat python generated homepage-</div></li>
 	         <li ><div >https://github.com/ok100/homepage.py</div></li>
@@ -1032,7 +1029,7 @@
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >@Broken Link? Questions? Errors? Suggestions? Post/Report them in the current desktop thread@</div></li>
 	         <li ><div >@*@*@*@*~Thank You~*@*@*@*@</div></li>
-	         <li ><div >Website maintenence can been viewed here: https://github.com/xDemonessx/Ricing-guide<div></li>
+	         <li ><div >Website maintenence: https://github.com/xDemonessx/Ricing-guide<div></li>
 			 <li ><div >Original website design by: https://github.com/mavanmanen</div></li>
 			</ol>
 			</div>
