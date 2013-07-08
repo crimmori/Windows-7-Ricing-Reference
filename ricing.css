@@ -1,8 +1,11 @@
 html
 {
-	color:rgb(70,70,70);
-	background: 	#eee;
+	color:#555;
+	background: url(http://www.gbgl-hq.com/demoness/textured_paper.png);
+	font-family: "Open Sans","Sans-Serif"!important;
+	font-size: 12pt!important;
 }
+
 .navigation
 {
 	position: fixed;
@@ -16,10 +19,16 @@ html
 	list-style-type: none;
 }
 
-.navigation ul li a:visited, a:hover, a:active, a:link
+.navigation ul li a:hover, a:active, a:link
 {
 	text-decoration: none;
-	color: #333;
+	color: #32558a;
+}
+
+.navigation ul li a:visited
+{
+	text-decoration: none;
+	color: #1e3252;
 }
 
 #wrapper
@@ -37,8 +46,9 @@ html
 	margin:0px;
 	color:#555;
 	list-style:none;
-	text-indent:15px;
-	font-size: 10pt!important;
+	text-indent:10px;
+	font-size: 8pt!important;
+	font-weight: 600;
 }
 
 .navigation ul li
@@ -69,5 +79,6 @@ html
 
 .h
 {
-	font-size: 16pt!important;
+	font-size: 16pt;
+	font-weight: 600;
 }
