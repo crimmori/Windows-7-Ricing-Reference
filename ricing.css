@@ -1,7 +1,11 @@
 html
 {
 	color:#555;
-	background: url(http://www.gbgl-hq.com/demoness/textured_paper.png);
+	background: url(http://www.gbgl-hq.com/demoness/html/nanami.png);
+	background-position: right; !important;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;!important;
 	font-family: "Open Sans","Sans-Serif"!important;
 	font-size: 12pt!important;
 }
