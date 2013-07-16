@@ -6,7 +6,7 @@ html
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;!important;
-	font-family: "Open Sans","Sans-Serif"!important;
+	font-family: 'Open Sans';
 	font-size: 12pt!important;
 }
 
@@ -53,7 +53,7 @@ html
 	color:#555;
 	list-style:none;
 	text-indent:10px;
-	font-size: 8pt!important;
+	font-size: 10pt!important;
 	font-weight: 600;
 }
 
