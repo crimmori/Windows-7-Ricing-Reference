@@ -91,6 +91,10 @@ html
 
 .h2
 {
+	background: url(http://www.gbgl-hq.com/demoness/html/header.png);
+	background-position: right; !important;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	font-size: 26pt;
 	font-weight: 600;
 	text-align: center;
