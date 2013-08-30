@@ -53,8 +53,8 @@ font-family: 'Open Sans';
 					<li><a href="#@0">Starter Guides, Tips, etc.</a></li>
 					<li><a href="#@1">Windows Software and Tools</a></li>
 					<li><a href="#@1a">Windows Tips and Tricks </a></li>
-					<li><a href="#@1b">Registry Editing</a></li>
-					<li><a href="#@2">Visual Styles </a></li>
+					<li><a href="#@1b">Theme/Visual Style Editing</a></li>
+					<li><a href="#@2">Visual Styles</a></li>
 					<li><a href="#@3">Icons</a></li>
 					<li><a href="#@4">Font Rendering</a></li>
 					<li><a href="#@4a">Font Recommendations</a></li>
@@ -153,11 +153,6 @@ font-family: 'Open Sans';
 	         <li ><div >-Theme Installer-</div></li>
 	         <li ><div >Software that will replace shell/theme files for you.</div></li>
 	         <li ><div ><a href="http://www.door2windows.com/windows-theme-installer-install-themes-in-windows-7-vista-with-ease/">Door2windows.com : Install Themes in Win 7 with ease</a></div></li>
-	         <li ><div >&nbsp;</div></li>
-	         <li ><div >-Aves Vista Style Builder- (Windows Style Builder)</div></li>
-	         <li ><div >Software that allows you to edit themes (visual styles) on Windows 7</div></li>
-	         <li ><div ><a href="http://www.thepiratebay.se/torrent/5923933">Download</a> - <a href="http://virtualcustoms.net/showthread.php/28810-Complete-Guide-to-Theme-Building">Guide</a> - <a href="http://virtualcustoms.net/showthread.php/40302-Themebuilding-getting-started">Getting Started</a></div></li>
-	         <li ><div >(registration required to view links/images)</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-TrueTransparency-</div></li>
 	         <li ><div >An application that allows you to use PNG images to create skins used to change the transparency, and border effects of windows. Does not work on everything however, and can be unstable in Win7</div></li>
@@ -259,12 +254,33 @@ font-family: 'Open Sans';
 	         <li ><div >-Making sure your taskbar is aligned properly, and slim as possible-</div></li>
 	         <li ><div >Ever install appows and notice the icons or the start orb seem to be a little misaligned? This is just a glitch with the taskbar that is easily solved by extending it. Unlock your task bar, and drag it to the top of your screen. You can do this by left clicking and holding the bar near the center, and moving it to the edges of the screen. Drag it to the top along the edges this way. Once its on top, hover over the middle of the bar near the bottom border until you see the resize option for height ?. Drag it down, extending it to double the normal height. Move it back down to the bottom of your screen, then size it back down using the same ? option. Lock your task bar. You should be at the correct size and alignment now.</div></li>
 	         <li ><div >&nbsp;</div></li>
+	         <li id="@1b"><div class="h">***Theme/Visual Style Editing***</div></li>
+	         <li ><div >Everything you need to start building and customizing your own Windows 7 themes!</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >Mainly, you will be using the Ave Style Builder to create your windows visual style design. With it, you can not only skin windows, captions, and borders - but taskbar size, color, and several other elements within explorer windows. All you need is an image editor (like photoshop) and some common sense. There are some more in depth tweaks that can be done by editing the registry, and shortcuts through Restorator and Resourcehacker than can make jobs like replacing fonts easier. If you get confused, or have a question, <a href="http://virtualcustoms.net/search.php">search the Virtual Customs Forums</a> FIRST!</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >-Aves Vista Style Builder- (Windows Style Builder)</div></li>
+	         <li ><div >Software that allows you to edit themes (visual styles) on Windows 7 </div></li>
+	         <li ><div ><a href="http://www.thepiratebay.se/torrent/5923933">Download</a> - <a href="http://virtualcustoms.net/showthread.php/28810-Complete-Guide-to-Theme-Building">Guide</a> - <a href="http://virtualcustoms.net/showthread.php/40302-Themebuilding-getting-started">Getting Started</a></div></li>
+	         <li ><div >(registration required to view links/images)</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >-Hex Editing-</div></li>
+	         <li ><div >Go deeper into editing your theme by changing seemingly hard-written windows code within the shellstyle and msstyle files!</div></li>
+	         <li ><div ><a href="http://fc01.deviantart.net/fs17/f/2007/224/e/2/Vista_Hex_Editing_Tutorial_0_7_by_UkIntel.pdf">Hex Editing Tutorial : UkIntel</a></div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >-Change your Font Globally</div></li>
+	         <li ><div ><a href="http://virtualcustoms.net/showthread.php/33498-Change-all-Fonts-in-WSB-easily">Virtual Customs : Change Fonts in WSB</a></div></li>
+	         <li ><div >I recommend leaving some parts of the visual style as the default Segoe UI, since unicode with tiny bitmaps looks terrible and .ttf will produce bad font rendering (unless the quality is properly defined, and cleartype is off of course).</div></li>
+	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-Remove the Folderband from ANY theme-</div></li>
 	         <li ><div >Edit the shellstyle.dll in the Windows/Resources/Themes/"themename" directory with Resource Hacker. Enjoy.</div></li>
 	         <li ><div ><a href="http://www.askvg.com/how-to-make-folder-band-auto-hidden-in-windows-vista/">Askvg.com : How to make the Folderband auto-hidden</a></div></li>
 	         <li ><div >&nbsp;</div></li>
-	         <li id="@1b"><div class="h">***Registry Editing***</div></li>
-	         <li ><div >There are a few elements within explorer windows than can be restyled or removed permanentley when you edit the registry. Simply press WIN+R to open your run prompt, and type "regedit" to navigate the keys. These keys can toggle options already found within explorer menus, or can completely override the default and set negative values - so be careful. Here is a list of basic elements you can remove to slim down your explorer windows, and customize menus. Everything is a separate link that will guide you to a tutorial about that element.</div></li>
+	         <li ><div >-Remove the Address bar/Explorer bar-</div></li>
+	         <li ><div >Using Style Builder, navigate to "Toolbars, Headers and Rebar > Rebar > NavBar > Basic > Base > Band" in the *.msstyles and adjust the "CONTENTMARGINS:MARGINS" to a negative value, as needed. Example: "0, 0, 0, -30".</div></li>
+	         <li ><div >&nbsp;</div></li>
+	         <li ><div >-Registry Editing-</div></li>
+	         <li ><div >Additionally, there are a few more elements within explorer windows than can be restyled or removed permanentley when you edit the registry. Simply press WIN+R to open your run prompt, and type "regedit" to navigate the keys. These keys can toggle options already found within explorer menus, or can completely override the default and set negative values - so be careful. Here is a list of basic elements you can remove to slim down your explorer windows, and customize menus. Everything is a separate link that will guide you to a tutorial about that element, and these guides also link to downloadable .reg files which are easy to merge directoy with your registry.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div ><a href="http://www.sevenforums.com/tutorials/4230-registry-backup-restore.html">**WARNING - BACK UP YOUR REGISTRY BEFORE DELETING OR EDITING VALUES**</a></div></li>
 	         <li ><div >&nbsp;</div></li>
@@ -381,7 +397,7 @@ font-family: 'Open Sans';
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >-Edit registries to disable all font smoothing entirely. Go <a href="http://answers.microsoft.com/en-us/windows/forum/windows_7-desktop/disable-all-font-smoothing-in-windows-7-ie/f180e803-3317-4433-8fd2-63aadaecc2d2">here</a> for details.</div></li>
 	         <li ><div >&nbsp;</div></li>
-	         <li ><div >-Use Windows Style Builder to disable ClearType for a font of your choice in your visual style. Go to Windows Software in the catalog, and look for &quot;Ave Style Builder&quot; for a guide and download link.</div></li>
+	         <li ><div >-Use Windows Style Builder to disable ClearType for a font of your choice in your visual style. Go to the Theme Editing section in the catalog, and look for &quot;Ave Style Builder&quot; for a guide and download link.</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li id="@4a"><div class="h" >***Font Recommendations***</div></li>
 	         <li ><div >-Sans and Sans Serif Fonts- </div></li>
@@ -553,6 +569,7 @@ font-family: 'Open Sans';
 	         <li ><div >&quot;xul.dll:MozillaWindowClass&quot;</div></li>
 	         <li ><div >For Google Chrome, put: &quot;chrome.exe&quot;</div></li>
 	         <li ><div >To turn bbleanskin off permanently, you can manually comment it out in your exclusions (blackbox&gt;bbleanskin&gt;edit exclusions to open the .rc). Just put a &quot;!&quot; in front of &quot;plugins\bbLeanSkin\bbLeanSkin.dll&quot;. You can always uncomment it later if needed.</div></li>
+	         <li ><div >To learn more about Skinning Exceptions with bbLean, read this thread on how to find what programs/elements are needed to add to your exceptions: <a href="http://www.lostinthebox.com/viewtopic.php?f=3&t=2420"> Lost in the Box : Skinning Exceptions</a></div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Q: My Rainmeter skin is overlapping with my bbleanbar, what do?</div></li>
 	         <li ><div >A: Change the width% of your bblean bar to match your skin. If you are using bb_bar, load</div></li>
@@ -979,14 +996,16 @@ font-family: 'Open Sans';
 	         <li ><div >Original Inspirations: Anonymous, Ahoka, GET9, Lullatone, Masood, !//S..MYON., hora hora, and Windows 7 ricers everywhere</div></li>
 	         <li ><div >DeviantArt Designers: neiio, kiko11, hora hora, brsev, and more.</div></li>
 	         <li ><div >DeviantArt Programmers: Kishan-Bagaria, parassidhu, Mr-Ragnarok, and more</div></li>
-	         <li ><div >Contributors: Monochrome!IKAWAII9Ec(Mono!X.FuJiWarA), Yuuji!ZzSakai1/g, Mez!!pDd+L0POgts</div></li>
+	         <li ><div >Contributors: Räv!MUNKEN0z/s ; Mono!X.FuJiWarA ; Yuuji!ZzSakai1/g ; Mez!!pDd+L0POgts</div></li>
 	         <li ><div >Helpers: Anonymous, Vibex!FL2K7hnbFY </div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >Thank You!</div></li>
 	         <li ><div >&nbsp;</div></li>
 	         <li ><div >&nbsp;</div></li>
-	         <li ><div ><a href="https://github.com/xDemonessx/Windows-7-Ricing-Reference">View website maintanence</a> --- <a href="https://github.com/xDemonessx/Windows-7-Ricing-Reference/issues?state=open">Report an issue/make a suggestion</a> --- <a href="mailto:white.cat.oem@gmail.com">Contact Me</a><div></li>
+	         <li ><div ><a href="https://github.com/xDemonessx/Windows-7-Ricing-Reference">View website maintanence</a><div></li>
+	         <li ><div ><a href="https://github.com/xDemonessx/Windows-7-Ricing-Reference/issues?state=open">Report an issue/make a suggestion</a><div></li>
+	         <li ><div ><a href="mailto:white.cat.oem@gmail.com">Contact Me</a><div></li>
 			</ol>
 			</div>
 	</body>
