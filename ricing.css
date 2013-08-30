@@ -102,6 +102,11 @@ html
 
 .h3
 {
-	font-size: 8pt;
+	font-size: 12pt;
 	text-align:center;
+}
+
+.gsc-control-cse {
+	background: none !important;
+	border: none !important;
 }
