@@ -6,3 +6,6 @@ Recently I purchased a domain so it doesn't have to be a long string of nonsense
 <br>
 http://nanami-tan.info/
 <br>
+If you intend to contribute to this website directly, simply use pull requests or visit the issue tracker and post a suggestion. Othwerise, feel free to pm me, contact me on rizon, or message me on deviant. I will tend submit your suggestion to the section I deem appropriate and credit you unless otherwise directed.
+<br>
+Thank you!
