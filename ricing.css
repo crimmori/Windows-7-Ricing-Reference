@@ -13,10 +13,10 @@ html
 .navigation
 {
 	position: fixed;
-	width:310;
-	left: -290;
+	width:337;
+	left: -317;
 	background:url(http://www.gbgl-hq.com/demoness/html/navarrow.png);
-	background-position: 10px;
+	background-position: 17px !important;
 	background-repeat:none;
 }
 
@@ -29,12 +29,18 @@ html
 {
 	text-decoration: none;
 	color: #32558a;
+	font-family: 'Open Sans';
+	font-size: 12pt!important;
+	font-weight: 400 !important;
 }
 
 .navigation ul li a:visited
 {
 	text-decoration: none;
 	color: #1e3252;
+	font-family: 'Open Sans';
+	font-size: 12pt!important;
+	font-weight: 400 !important;
 }
 
 #wrapper
@@ -47,21 +53,23 @@ html
 
 .navigation ul
 {
-	width: 290;
+	width: 315;
 	padding:0px;
 	margin:0px;
 	color:#555;
 	list-style:none;
 	text-indent:10px;
-	font-size: 10pt!important;
-	font-weight: 600;
+	font-size: 12pt!important;
+	font-weight: 400;
+	border-top: 1px solid #777 !important;
+	border-right: 1px solid #777 !important;
+	border-bottom:none !important;
 }
 
 .navigation ul li
 {
 	background:#eee;
-	line-height:15px;
-    border:1px solid #333;
+	line-height:18px;
 }
 
 .navigation ul li a
@@ -69,12 +77,13 @@ html
 	text-decoration:none;
 	color:#555;
 	display:block;
+	border-bottom: 1px solid #777 !important;
 }
 
 .navigation ul li a:hover
 {
 	text-decoration:none;
-	background:  #eee;
+	background:  #ddd;
 	display:block;
 }
 
@@ -109,3 +118,4 @@ html
 	background: none !important;
 	border: none !important;
 }
+
